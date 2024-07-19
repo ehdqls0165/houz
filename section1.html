@@ -1,0 +1,242 @@
+
+<div class="slide_section section">
+    <div class="slide_light"></div>
+  <div class="sec1">
+    <div class="sec1_slide">
+      <img src="https://github.com/ehdqls0165/houz/blob/main/slide1.jpg?raw=true" alt="">
+    </div>
+    <div class="sec1_slide">
+      <img src="https://github.com/ehdqls0165/houz/blob/main/slide2.jpg?raw=true" alt="">
+    </div>
+    <div class="sec1_slide">
+      <img src="https://github.com/ehdqls0165/houz/blob/main/slide3.jpg?raw=true" alt="">
+    </div>
+    <div class="sec1_slide">
+      <img src="https://github.com/ehdqls0165/houz/blob/main/slide4.jpg?raw=true" alt="">
+    </div>
+  </div>
+  <div class="sec2">
+      <ul class="sec2_t">
+          <li data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">Brand Story</li>
+          <li data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">당신의 공간에서, 당신의 여유를 발견하세요.</li>
+          <li data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">이 슬로건은 개인의 내면인 공간과 감정의 깊이 속에서</li>
+          <li data-aos="fade-down" data-aos-duration="500" data-aos-easing="linear">진정한 편안함과 안식을 발견하라는 의미를 가지고 있습니다.</li>
+      </ul>
+     <div class="h_circle">
+          <div class="hb">+</div>
+          <div class="bh_c">more</div>
+      </div>
+  </div>
+  <div class="sec3">
+      <div class="sec3_slide">
+          <img src="https://github.com/ehdqls0165/houz/blob/main/slide5.jpg?raw=true" alt="">
+      </div>
+      <div class="sec3_slide">
+          <img src="https://github.com/ehdqls0165/houz/blob/main/slide6.jpg?raw=true" alt="">
+      </div>
+      <div class="sec3_slide">
+          <img src="https://github.com/ehdqls0165/houz/blob/main/slide7.jpg?raw=true" alt="">
+      </div>
+      <div class="sec3_slide">
+          <img src="https://github.com/ehdqls0165/houz/blob/main/slide8.jpg?raw=true" alt="">
+      </div>
+  </div>
+</div>
+
+
+<style>    
+@font-face {
+  font-family: 'ChosunGs';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGs.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+  .slide_section{
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      background:#c1b7a5;
+    
+  }
+
+  .slide_light {
+  width: 400px;
+  height: 400px !important;
+  background-color: white;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  background: linear-gradient(to right, #f3d06233, #ea5e5442);
+  z-index: 0;
+  filter: blur(30px);
+  }
+
+  .slide_section > div{
+      height: 100%;
+  }
+  .slide_section > div.sec1{
+      width: 20%;
+      animation: slidedown linear infinite 40s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+  }
+  .slide_section > div.sec1 >div{
+      margin-top: 15px;
+  }
+  .slide_section > div.sec1 >div img{
+      width: 100%;
+      object-fit: cover;
+  }
+
+  .slide_section > div.sec2{
+      width: 50%
+      
+  }
+.slide_section > div.sec2{
+      width: 60%;
+      position: relative;
+      
+  }
+  .slide_section > div.sec2 .h_circle{
+      width: 25vw;
+      height: 25vw;
+      border-radius: 50%;
+      border: 1px solid #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.5s;
+      cursor: pointer;
+  } 
+  .slide_section > div.sec2 .h_circle:hover{
+      transform: translate(-50%, -50%) scale(0.5) rotate(360deg);
+
+  }
+  .slide_section > div.sec2 .h_circle:hover .bh_c{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .slide_section > div.sec2 .h_circle .bh_c{
+      color: #ff6702;
+      font-size: 40px;
+      transition: 0.5s;
+      width: 12.5vw;
+      height: 12.5vw;
+      border-radius: 50%;
+      display: none;
+      position: relative;
+        border: 1px solid #fff
+
+
+  }
+  .slide_section > div.sec2 .h_circle:hover .hb{
+      display: none;
+  }
+
+  .slide_section > div.sec2 .h_circle .hb{
+      color: #fff;
+      font-size: 40px;
+  }
+  .slide_section > div.sec2 .sec2_t{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      list-style: none;
+      padding: 0px 70px ;
+      color:white;
+  }
+  .slide_section > div.sec2 .sec2_t li:nth-of-type(1){
+      font-size: 4.5vw;
+      text-align: justify;
+      margin-bottom: 50px;
+        font-family: 'ChosunGs';
+  }
+  .slide_section > div.sec2 .sec2_t li:nth-of-type(2){
+      text-align: right;
+      font-size: 20px;
+      margin-bottom: 20px;
+  }
+  .slide_section > div.sec2 .sec2_t li:nth-of-type(3){
+      text-align: right;
+      font-size: 16px;
+  }
+  .slide_section > div.sec2 .sec2_t li:nth-of-type(4){
+      text-align: right;
+      font-size: 16px;
+  }
+
+  .slide_section > div.sec3{
+      width: 20%;
+      animation: slideup linear infinite 40s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .slide_section > div.sec3 >div{
+      margin-top: 15px;
+  }
+  .slide_section > div.sec3 >div img{
+      width: 100%;
+      object-fit: cover;
+  }
+
+  @keyframes slidedown {
+0% {
+  transform: translateY(-50%);
+}
+100% {
+  transform: translateY(0);
+}
+}
+
+@keyframes slideup {
+0% {
+  transform: translateY(0);
+}
+100% {
+  transform: translateY(-50%);
+}
+}
+</style>
+<script>
+const light = document.querySelector(".slide_light");
+
+window.addEventListener('pointermove',(e)=>{
+const {clientX,clientY}=e;
+// blob.style.left=`${clientX}px`;
+// blob.style.top=`${clientY}px`;
+light.animate({
+  left:`${clientX}px`,
+  top:`${clientY}px`
+},{duration:3000, fill:"forwards"})
+})
+
+
+
+</script>
+
+
+
+
